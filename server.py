@@ -18,7 +18,7 @@ class MyUDPRequestHandler(socketserver.DatagramRequestHandler):
         # Print the name of the thread
         print("Thread Name:{}".format(threading.current_thread().name))
         # Send a message to the client
-        self.wfile.write("Message from Server! Hello Client".encode())
+        self.wfile.write("Message from Rover! Hello Client".encode())
 
 # Create a Server Instance
 UDPServerObject = socketserver.ThreadingUDPServer(ServerAddress, MyUDPRequestHandler)
